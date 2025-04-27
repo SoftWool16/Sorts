@@ -13,12 +13,15 @@ def ids(n1, n2):
         s = a.pop(n1)
         a.insert(n2, s)
         print(a)
-    string2 = ""
-    s = a.pop(n1)
-    a.insert(n2, s)
-    for b in a:
-        string2 += (" | " + str(b))
-    print(string2)
+        string2 = ""
+        s = a.pop(n1)
+        a.insert(n2, s)
+        for b in a:
+            string2 += (" | " + str(b))
+        print(string2)
+    else:
+        print("--------код хуйня--------")
+
 
 def lst(num):
     for n1 in range(num):
@@ -29,14 +32,7 @@ def lst(num):
 
 
 for s in range(num):
-    if s < num:
+    if s <= num:
         lst(num)
     else:
         print("--------конец--------")
-
-
-for number in a:
-    index = a.index(number)
-    for number_2 in a:
-        index_2 = a.index(number_2)
-        ids(index, index_2)
