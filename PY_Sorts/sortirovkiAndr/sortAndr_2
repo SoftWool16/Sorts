@@ -1,0 +1,4 @@
+import random  
+n = int(input())
+r = random.sample(range(1000), n)
+print(r)
